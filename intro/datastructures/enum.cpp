@@ -1,25 +1,26 @@
 #include <iostream>
 
-enum Genres{fiction, nonFiction, mystery, scienceFiction};
+enum Genres{Fiction, NonFiction, Mystery, ScienceFiction};
 
 void display(){
-    enum Genres genre = mystery;
+    enum Genres genre = Mystery;
     std::cout << "Genre: ";
     switch(genre){
-        case 0: 
+        case Fiction: 
         std::cout << "Fiction";
         break;
-        case 1: 
+        case NonFiction: 
         std::cout << "Non-Fiction";
         break;
-        case 2:
+        case Mystery:
         std::cout << "Mystery";
         break;
-        case 3:
+        case ScienceFiction:
         std::cout << "Science-Fiction";
         break;
         default:
         std::cout << "NULL";
+        break;
     }
 }
 
